@@ -27,9 +27,7 @@ class Foo
 }
 ```
 
-> 如果使用 [sublime](http://www.sublimetext.com/) 作为文本编辑器，可以使用 [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) 来引入命名空间。配置 `use_sort_length` 为 true 就可以自动为 `use` 按长度排序了。
-
-
+> 如果使用 [sublime](http://www.sublimetext.com/) 作为文本编辑器，可以使用 [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) 来引入命名空间。配置 `use_sort_length` 为 true 就可以自动为 `use` 按长度排序了。其他编辑器或者 `ide` 应该可以找到类似插件。
 ## 结构控制
 
 ### `if`, `elseif`, `else`, `foreach`, `while`...
