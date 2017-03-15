@@ -46,6 +46,20 @@ if {true} {
 end();
 ```
 
+### `!` 的使用
+
+在 `!` 有一个空格
+
+```php
+<?php
+
+if (! $isTrue) {
+	//
+}
+
+return ! empty($data);
+```
+
 ## `try`, `catch`
 
 如果使用 `php7.1` 的话，有两个或以上异常做相同的处理，需要使用新的语法结构
@@ -75,19 +89,7 @@ if (! function_exists('code_style')) {
 
 ```
 
-## 和 `laravel` 不同的几点
-
-### `!` 的使用
-
-在 `!` 有一个空格
-
-```php
-<?php
-
-if (! $isTrue) {
-	//
-}
-```
+## 和 `laravel` 不同的地方
 
 ### `.` 字符串连接
 
