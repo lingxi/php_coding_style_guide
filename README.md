@@ -40,7 +40,7 @@ class Foo
 
 start();
 
-if {true} {
+if (true) {
 	//
 }
 
