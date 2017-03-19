@@ -87,7 +87,18 @@ if (! function_exists('code_style')) {
 		//
 	}
 }
+```
 
+或者，带上命名空间
+
+```
+<?php
+
+namespave str;
+
+function replace_assoc(array $replace, $subject) {
+	return str_replace(array_keys($replace), array_values($replace), $subject);
+}
 ```
 
 ## 和 `laravel` 不同的地方
