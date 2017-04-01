@@ -1,6 +1,6 @@
 # [灵析团队]PHP 代码风格指南
 
-在 [fig-psr2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) 和 [laravel](https://laravel.com/) 的代码规范基础上，加上团队一些自己的习惯，总结出自己的一套以供交流学习。
+在 [fig-psr2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md) 和 [Laravel](https://laravel.com/) 的代码规范基础上，加上团队一些自己的习惯，总结出自己的一套以供交流学习。
 
 ## 基础
 
@@ -23,17 +23,17 @@ use App\Services\Baz;
 
 class Foo
 {
-	App::run();
+    App::run();
 }
 ```
 
-> 如果使用 [sublime](http://www.sublimetext.com/) 作为文本编辑器，可以使用 [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) 来引入命名空间。配置 `use_sort_length` 为 true 就可以自动为 `use` 按长度排序了。其他编辑器或者 `ide` 应该可以找到类似插件。
+> 如果使用 [Sublime](http://www.sublimetext.com/) 作为文本编辑器，可以使用 [PHP Companion](https://packagecontrol.io/packages/PHP%20Companion) 来引入命名空间。配置 `use_sort_length` 为 true 就可以自动为 `use` 按长度排序了。其他编辑器或者 `ide` 应该可以找到类似插件。
 
 ## 结构控制
 
 ### `if`, `elseif`, `else`, `foreach`, `while`...
 
-所有的 `}` 后必须有一行换行，`{` 上面也应该有一行换行
+所有的 `}` 之后必须有一行换行，`{` 上面也应该有一行换行
 
 ```php
 <?php
@@ -41,7 +41,7 @@ class Foo
 start();
 
 if (true) {
-	//
+    // your code
 }
 
 end();
@@ -49,13 +49,13 @@ end();
 
 ### `!` 的使用
 
-在 `!` 有一个空格
+在 `!` 之后有一个空格
 
 ```php
 <?php
 
 if (! $isTrue) {
-	//
+    // your code
 }
 
 return ! empty($data);
@@ -63,15 +63,15 @@ return ! empty($data);
 
 ## `try`, `catch`
 
-如果使用 `php7.1` 的话，有两个或以上异常做相同的处理，需要使用新的语法结构
+如果使用 `PHP7.1` 的话，有两个或以上异常做相同的处理，需要使用新的语法结构
 
 ```php
 <?php
 
 try {
-	//
+    //
 } catch (FirstException | SecondException $e) {
-	//
+    //
 }
 ```
 
@@ -83,9 +83,9 @@ try {
 <?php
 
 if (! function_exists('code_style')) {
-	function code_style() {
-		//
-	}
+    function code_style() {
+        // your code
+    }
 }
 ```
 
@@ -97,11 +97,11 @@ if (! function_exists('code_style')) {
 namespave str;
 
 function replace_assoc(array $replace, $subject) {
-	return str_replace(array_keys($replace), array_values($replace), $subject);
+    return str_replace(array_keys($replace), array_values($replace), $subject);
 }
 ```
 
-## 和 `laravel` 不同的地方
+## 和 `Laravel` 不同的地方
 
 ### `.` 字符串连接
 
