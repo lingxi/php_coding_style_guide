@@ -83,7 +83,8 @@ try {
 <?php
 
 if (! function_exists('code_style')) {
-    function code_style() {
+    function code_style() 
+	{
         // your code
     }
 }
